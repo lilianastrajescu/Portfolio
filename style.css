@@ -1,0 +1,125 @@
+body {
+  background-color: black !important;
+  margin: 0 auto !important;
+  color: white !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+/* Navbar */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 250px 50px 250px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-brand {
+  font-size: 60px;
+}
+.nav-link {
+  transition: 0.8s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.nav-item {
+  font-size: 20px;
+}
+.nav-item:hover {
+  font-size: 23px;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* First section */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px ;
+}
+.main-row{
+    align-items: center;
+    justify-content: space-around;
+}
+.name-title {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.job-name {
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.code-image img {
+  width: 250px;
+  height: 250px;
+}
+
+@media (max-width: 1290px) {
+    .navbar{
+       margin: 0;
+    }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-color: black;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
