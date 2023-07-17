@@ -164,10 +164,13 @@ text-decoration: none;
     padding: 50px;
 }
 .sections-title{
-    
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
 }
 .content-about{
 align-items: center;
+justify-content: center;
 }
 .personal-image img{
     border: solid 2px #43A7D4;
@@ -181,6 +184,7 @@ align-items: center;
         display: flex;
     justify-content: center;
 }
+
 
 
 @media (max-width: 1290px) {
