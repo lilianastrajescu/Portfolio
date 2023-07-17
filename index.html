@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <header class="container-fluid fixed">
         <nav class="navbar">
             <a class="navbar-brand logo" href="#home">
@@ -29,7 +30,7 @@
             </a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About me</a>
+                    <a class="nav-link" href="#about">About me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Skills</a>
@@ -52,17 +53,40 @@
         </nav>
     </header>
 
-    <section class="container main-section">
-        <div class="row main-row">
-            <div class=" col-md-8 title-section">
-                <h2 class="name-title">Hi! I'm Liliana</h2>
-                <h1 class="job-name">Front-end Developer</h1>
+    <section>
+        <div class="container main-section" id="home">
+            <div class="row main-row ">
+                <div class=" col-md-8 title-section">
+                    <h2 class="name-title">Hi! I'm Liliana</h2>
+                    <h1 class="job-name">Front-end Developer</h1>
+                </div>
+                <div class=" col-md-4 code-image">
+                    <img src="./images/coding.png" alt="coding image">
+                </div>
             </div>
-            <div class=" col-md-4 code-image">
-                <img src="./images/coding.png" alt="coding image">
+        </div>
+        <div class="main-buttons-section">
+            <a class="button button-portfolio" href="#portfolio"><span>Portfolio</span></a>
+            <a class="button button-download" href="#cv" id="download-btn">
+                <span id="btn-text">Download CV</span>
+            </a>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about container" id="about">
+        <h3 class="sections-title">About me</h3>
+        <div class="row content-about">
+            <div class="col-md-5 personal-image"><img src="./images/me-pictures.png"></div>
+            <div class="col-md-7 personal-text">
+                <p></p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since
+                the 1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book.
             </div>
         </div>
     </section>
+
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

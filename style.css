@@ -4,6 +4,9 @@ body {
   color: white !important;
   font-family: "Inter", sans-serif !important;
 }
+download-image{
+   --image-url: url("./images/download.png");
+}
 
 /* Navbar */
 a {
@@ -35,8 +38,10 @@ li {
 .nav-brand {
   font-size: 60px;
 }
-.nav-link {
-  transition: 0.8s ease;
+.nav-item:hover {
+  transition-duration: all 3s;
+    color: rgb(230, 87, 255);
+font-weight: 500;
 }
 
 .hamburger {
@@ -62,12 +67,12 @@ li {
 /* First section */
 .main-section {
   display: flex;
+  margin-top: 200px;
   flex-direction: column;
-  margin-top: 200px ;
 }
-.main-row{
-    align-items: center;
-    justify-content: space-around;
+.main-row {
+  align-items: center;
+  justify-content: space-around;
 }
 .name-title {
   font-size: 60px;
@@ -85,14 +90,103 @@ li {
 }
 
 .code-image img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
 
+.main-buttons-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.button {
+  padding: 20px 60px 20px 60px;
+  border-radius: 0.6em;
+  background-color: black;
+  border: solid 1.5px white !important;
+  color: white;
+  font-weight: 500;
+  margin-right: 70px;
+text-decoration: none;
+}
+
+.button:hover {
+  background: rgb(178, 3, 207);
+  background: linear-gradient(
+    327deg,
+    rgb(126, 0, 149) 19%,
+    rgba(67, 167, 212, 1) 76%,
+    rgba(67, 167, 212, 1) 88%,
+    rgba(67, 167, 212, 1) 88%
+  );
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-portfolio span:after {
+  content: '\276F';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:visited {
+    color: white !important;
+}
+
+.button-download span:after {
+  content: '\2193';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+/*About*/
+.about{
+    margin: 130px;
+    border: solid 2px #43A7D4;
+    border-radius: 1.5em;
+    padding: 50px;
+}
+.sections-title{
+    
+}
+.content-about{
+align-items: center;
+}
+.personal-image img{
+    border: solid 2px #43A7D4;
+    border-radius: 10em;
+    padding: 12px;
+    width: 300px;
+    height: 300px;
+
+}
+.personal-image, .personal-text{
+        display: flex;
+    justify-content: center;
+}
+
+
 @media (max-width: 1290px) {
-    .navbar{
-       margin: 0;
-    }
+  .navbar {
+    margin: 0;
+  }
   .hamburger {
     display: block;
   }
