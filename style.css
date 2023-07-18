@@ -4,8 +4,15 @@ body {
   color: white !important;
   font-family: "Inter", sans-serif !important;
 }
-download-image{
-   --image-url: url("./images/download.png");
+.download-image {
+  --image-url: url("./images/download.png");
+}
+
+.sections-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 60px;
+  margin-top: 80px;
 }
 
 /* Navbar */
@@ -40,8 +47,8 @@ li {
 }
 .nav-item:hover {
   transition-duration: all 3s;
-    color: rgb(230, 87, 255);
-font-weight: 500;
+  color: rgb(230, 87, 255);
+  font-weight: 500;
 }
 
 .hamburger {
@@ -94,10 +101,10 @@ font-weight: 500;
   height: 300px;
 }
 
-.main-buttons-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
+.main-buttons-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
 }
 .button {
   padding: 20px 60px 20px 60px;
@@ -107,7 +114,7 @@ font-weight: 500;
   color: white;
   font-weight: 500;
   margin-right: 70px;
-text-decoration: none;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -127,7 +134,7 @@ text-decoration: none;
   transition: 0.5s;
 }
 .button-portfolio span:after {
-  content: '\276F';
+  content: "\276F";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -144,11 +151,11 @@ text-decoration: none;
   right: 0;
 }
 .button:visited {
-    color: white !important;
+  color: white !important;
 }
 
 .button-download span:after {
-  content: '\2193';
+  content: "\2193";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -157,33 +164,150 @@ text-decoration: none;
 }
 
 /*About*/
-.about{
-    margin: 130px;
-    border: solid 2px #43A7D4;
-    border-radius: 1.5em;
-    padding: 50px;
+.about {
+  margin: 130px;
+  border: solid 2px #43a7d4;
+  border-radius: 1.5em;
+  padding: 50px;
 }
-.sections-title{
-    text-align: center;
-    font-weight: 900;
-    font-size: 60px;
+.content-about {
+  align-items: center;
+  justify-content: center;
 }
-.content-about{
-align-items: center;
-justify-content: center;
+.personal-image img {
+  border: solid 2px #43a7d4;
+  border-radius: 10em;
+  padding: 12px;
+  width: 300px;
+  height: 300px;
 }
-.personal-image img{
-    border: solid 2px #43A7D4;
-    border-radius: 10em;
-    padding: 12px;
-    width: 300px;
-    height: 300px;
+.personal-image,
+.personal-text {
+  display: flex;
+  justify-content: center;
+}
+/*Skills*/
+.skills {
+  margin-top: 50px;
+}
+.skills-section {
+  justify-content: center;
+}
+.skills-images img {
+  width: 90px;
+  height: 90px;
+}
+.skills-images {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 40px 0px;
+  align-items: center;
+}
+.skills-name{
+  margin-top:20px ;
+}
+
+/*Projects*/
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.projects-container{
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.projects-section{
+  display: flex;
 
 }
-.personal-image, .personal-text{
-        display: flex;
-    justify-content: center;
+.projects-images img{
+  width: 550px;
+  height: 290px;
+  border-radius: 1em;
 }
+.text-projects h3{
+   font-weight: 600;
+   font-size: 40px;
+}
+.section-buttons-projects{
+   display: flex;
+    margin-top: 75px;
+}
+.section-buttons-projects  a{
+   text-decoration: none;
+}
+
+.button-project img{
+  width: 20px;
+  height: 20px;
+}
+
+.button-project {
+ position: relative;
+ display: flex;
+ align-items: center;
+ border: solid 1px white;
+ background-color: black;
+ border-radius: 5px;
+margin-right: 45px;
+ }
+.button-project:after {
+ content: " ";
+ width: 0%;
+ height: 100%;
+ background: #ffffff;
+ position: absolute;
+ transition: all 0.5s ease-out;
+ right: 0;
+}
+.button-project:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
+}
+.button-project span {
+ padding: 10px 25px;
+ color: #fff;
+ z-index: 1;
+ transition: all 0.3s ease-in-out;
+}
+.button-project:hover span {
+ color: #000000;
+  font-weight: 500;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
 
 
 
