@@ -204,85 +204,81 @@ li {
   padding: 40px 0px 40px 0px;
   align-items: center;
 }
-.skills-name{
-  margin-top:20px ;
+.skills-name {
+  margin-top: 20px;
 }
 
-
-
 /*Projects*/
-
 .slideshow-container {
   position: relative;
   margin: auto;
 }
-.projects-container{
+.projects-container {
   margin-top: 70px;
   margin-bottom: 50px;
 }
-.projects-section{
+.projects-section {
   display: flex;
 }
-.projects-images{
+.projects-images {
   height: 290px;
   border-radius: 1em;
   text-align: center;
 }
-.projects-images img{
+.projects-images img {
   height: 290px;
   border-radius: 1em;
 }
-.text-projects h3{
-   font-weight: 600;
-   font-size: 40px;
+.text-projects h3 {
+  font-weight: 600;
+  font-size: 40px;
 }
-.section-buttons-projects{
-   display: flex;
-    margin-top: 75px;
+.section-buttons-projects {
+  display: flex;
+  margin-top: 75px;
 }
-.section-buttons-projects  a{
-   text-decoration: none;
+.section-buttons-projects a {
+  text-decoration: none;
 }
 
-.button-project img{
+.button-project img {
   width: 20px;
   height: 20px;
 }
 
 .button-project {
- position: relative;
- display: flex;
- align-items: center;
- border: solid 1px white;
- background-color: black;
- border-radius: 5px;
-margin-right: 45px;
- }
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: solid 1px white;
+  background-color: black;
+  border-radius: 5px;
+  margin-right: 45px;
+}
 .button-project:after {
- content: " ";
- width: 0%;
- height: 100%;
- background: #ffffff;
- position: absolute;
- transition: all 0.5s ease-out;
- right: 0;
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  transition: all 0.5s ease-out;
+  right: 0;
 }
 .button-project:hover::after {
- right: auto;
- left: 0;
- width: 100%;
+  right: auto;
+  left: 0;
+  width: 100%;
 }
 .button-project span {
- padding: 10px 25px;
- color: #fff;
- z-index: 1;
- transition: all 0.3s ease-in-out;
+  padding: 10px 25px;
+  color: #fff;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 .button-project:hover span {
- color: #000000;
+  color: #000000;
   font-weight: 500;
 }
-
 
 /* The dots */
 .dot {
@@ -295,17 +291,16 @@ margin-right: 45px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #43a7d4;
 }
-
 /* Fading animation */
-.dot{
+.dot {
   width: 20px;
   height: 20px;
 }
-.dots{
+.dots {
   text-align: center;
   margin: 30px;
 }
@@ -316,7 +311,8 @@ margin-right: 45px;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 30%;
@@ -330,19 +326,38 @@ margin-right: 45px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.next{
-  right: -50px;
+.next {
+  right: -25px;
   border-radius: 0 3px 3px 0;
 }
 .prev {
   left: -50px;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: black;
 }
 
+/*Contact section*/
+
+.contacts img {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.contacts a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+.contacts img:hover {
+transform: scale(1.2);
+}
 
 
 @media (max-width: 1290px) {
