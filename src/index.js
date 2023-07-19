@@ -11,7 +11,6 @@ document.querySelectorAll("nav-link").forEach((n) =>
     hamburger.classList.remove("active");
   })
 );
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -22,7 +21,6 @@ function plusSlides(n){
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -39,6 +37,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+
   slides[slideIndex - 1].style.display = "";
   dots[slideIndex - 1].className += " active";
 }
