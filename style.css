@@ -4,10 +4,11 @@ body {
   color: white !important;
   font-family: "Inter", sans-serif !important;
 }
-.download-image {
-  --image-url: url("./images/download.png");
-}
 
+:root{
+  --violet-text-color:rgb(201, 114, 216);
+  --blue-color-text:#43a7d4;
+}
 .sections-title {
   text-align: center;
   font-weight: 800;
@@ -47,8 +48,12 @@ li {
 }
 .nav-item:hover {
   transition-duration: all 3s;
-  color: rgb(230, 87, 255);
-  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+
+  border: solid 1px white;
+  padding: 5px 10px;
+  border-radius: 0.2rem;
 }
 
 .hamburger {
@@ -57,9 +62,6 @@ li {
 }
 .nav-item {
   font-size: 20px;
-}
-.nav-item:hover {
-  font-size: 23px;
 }
 .bar {
   display: block;
@@ -166,7 +168,7 @@ li {
 /*About*/
 .about {
   margin: 130px;
-  border: solid 2px #43a7d4;
+  border: solid 2px var(--blue-color-text);
   border-radius: 1.5em;
   padding: 50px;
 }
@@ -175,7 +177,7 @@ li {
   justify-content: center;
 }
 .personal-image img {
-  border: solid 2px #43a7d4;
+  border: solid 2px var(--blue-color-text);
   border-radius: 10em;
   padding: 12px;
   width: 300px;
@@ -293,7 +295,7 @@ li {
 }
 .active,
 .dot:hover {
-  background-color: #43a7d4;
+  background-color:var(--blue-color-text);
 }
 /* Fading animation */
 .dot {
@@ -342,12 +344,12 @@ li {
 
 /*Contact section*/
 
-.contacts img {
-  width: 45px;
-  height: 45px;
+.contacts img{
+  width: 65px;
+  height: 65px;
   background-color: white;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   margin-right: 10px;
 }
 .contacts a {
@@ -355,9 +357,25 @@ li {
   font-size: 20px;
   color: #ffffff;
 }
+.contacts a:visited{
+  color: white;
+}
+.contacts a:hover{
+  color: var(--violet-text-color);
+}
 .contacts img:hover {
 transform: scale(1.2);
 }
+.contact-row{
+padding-top: 40px;
+  padding-bottom: 20px;
+}
+.contacts{
+  padding-top: 40px;
+  padding-bottom: 20px;
+   margin-left: 250px;
+}
+
 
 
 @media (max-width: 1290px) {
