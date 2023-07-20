@@ -5,15 +5,27 @@ body {
   font-family: "Inter", sans-serif !important;
 }
 
-:root{
-  --violet-text-color:rgb(201, 114, 216);
-  --blue-color-text:#43a7d4;
+:root {
+  --violet-text-color: rgb(201, 114, 216);
+  --blue-color-text: #43a7d4;
 }
 .sections-title {
   text-align: center;
   font-weight: 800;
   font-size: 60px;
-  margin-top: 80px;
+  margin-top: 70px;
+}
+.sections-title:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    327deg,
+    rgb(126, 0, 149) 19%,
+    rgba(67, 167, 212, 1) 76%,
+    rgba(67, 167, 212, 1) 88%,
+    rgba(67, 167, 212, 1) 88%
+  );
 }
 
 /* Navbar */
@@ -48,20 +60,18 @@ li {
 }
 .nav-item:hover {
   transition-duration: all 3s;
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-
-  border: solid 1px white;
-  padding: 5px 10px;
-  border-radius: 0.2rem;
+  color: var(--violet-text-color);
+  font-weight: 500;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
 }
 .nav-item {
   font-size: 20px;
+}
+.nav-item:hover {
+  font-size: 23px;
 }
 .bar {
   display: block;
@@ -71,6 +81,9 @@ li {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+.hamburger:active {
+  background-color: none;
 }
 
 /* First section */
@@ -170,7 +183,7 @@ li {
   margin: 130px;
   border: solid 2px var(--blue-color-text);
   border-radius: 1.5em;
-  padding: 50px;
+  padding-bottom: 50px;
 }
 .content-about {
   align-items: center;
@@ -281,7 +294,6 @@ li {
   color: #000000;
   font-weight: 500;
 }
-
 /* The dots */
 .dot {
   cursor: pointer;
@@ -295,9 +307,8 @@ li {
 }
 .active,
 .dot:hover {
-  background-color:var(--blue-color-text);
+  background-color: var(--blue-color-text);
 }
-/* Fading animation */
 .dot {
   width: 20px;
   height: 20px;
@@ -306,8 +317,6 @@ li {
   text-align: center;
   margin: 30px;
 }
-/* Fading animation */
-
 .mySlides {
   display: none;
 }
@@ -343,12 +352,11 @@ li {
 }
 
 /*Contact section*/
-
-.contacts img{
+.contacts img {
   width: 65px;
   height: 65px;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 25px;
   padding: 10px;
   margin-right: 10px;
 }
@@ -356,34 +364,70 @@ li {
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;
+  text-align: center;
 }
-.contacts a:visited{
+.contacts a:visited {
   color: white;
 }
-.contacts a:hover{
+.contacts a:hover {
   color: var(--violet-text-color);
+  text-decoration: underline;
 }
 .contacts img:hover {
-transform: scale(1.2);
+  transform: scale(1.2);
 }
-.contact-row{
-padding-top: 40px;
-  padding-bottom: 20px;
-}
-.contacts{
+.contacts {
   padding-top: 40px;
   padding-bottom: 20px;
-   margin-left: 250px;
+  display: flex;
+  align-items: center;
+}
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.content-left {
+  display: flex;
+  justify-content: flex-end;
+}
+.text-contact {
+  padding-left: 35px;
 }
 
-
+/*Footer*/
+footer {
+  height: 200px;
+  text-align: center;
+  border-top: 1px solid #717171;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: var(--blue-color-text);
+}
+footer p {
+  font-size: 15px;
+}
 
 @media (max-width: 1290px) {
-  .navbar {
+  .navbar,
+  .nav-menu {
     margin: 0;
+    z-index: 5;
   }
   .hamburger {
     display: block;
+  }
+  .hamburger:active {
+    background-color: #ffffff;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;

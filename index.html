@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed">
+    <header class="container-fluid">
         <nav class="navbar">
             <a class="navbar-brand logo" href="#home">
                 <img class="logo" src="./images/logo.png" alt="Liliana logo">
@@ -112,7 +112,6 @@
                 </div>
             </div>
             <div class="row skills-section">
-
                 <div class="col-2 skills-images"><img src="./images/photoshop.png">
                     <h5 class="skills-name">Photoshop</h5>
                 </div>
@@ -171,13 +170,10 @@
                 </div>
                 <div class="col-md-6 projects-images"><img src="./images/projects/weather-app-react.png"></div>
             </div>
-
         </div>
-
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <!-- The dots/circles -->
         <div style="text-align:center" class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -186,38 +182,42 @@
 
     <!--Contact Me-->
     <section class="container">
-        <h3 class="sections-title" id="projects">Contact me</h3>
-        <div class="row text-contact-section">
-            <div class="col contacts">
-                <div class="row contact-row">
-                    <div class="col contact-details">
-                        <a href="mailto:liliana.strajescu96@gmail.com"><img src="images/email.png"></a>
-                        <a href="mailto:liliana.strajescu96@gmail.com">liliana.strajescu96@gmail.com</a>
-                    </div>
+        <h3 class="sections-title" id="contact">Contact me</h3>
+        <div class="contact-container">
+            <div class="row row-contact-section">
+                <div class="col contacts">
+                    <a href="mailto:liliana.strajescu96@gmail.com"><img src="images/email.png"></a>
+                    <a href="mailto:liliana.strajescu96@gmail.com"
+                        class="text-contact">liliana.strajescu96@gmail.com</a>
                 </div>
-                <div class="row contact-row">
-                    <div class="col contact-details">
-                        <a href="https://www.linkedin.com/in/liliana-strajescu/"><img src="images/linkedin.png"></a>
-                        <a href="https://www.linkedin.com/in/liliana-strajescu/">Linkedin</a>
-                    </div>
+                <div class="col contacts content-left">
+                    <a href="#"><img src="images/cv.png"></a>
+                    <a href="#" class="text-contact">My CV</a>
                 </div>
             </div>
-            <div class="col contacts">
-                <div class="row contact-row">
-                    <div class="col contact-details">
-                        <a href="#"><img src="images/cv.png"></a>
-                        <a href="#">My CV</a>
-                    </div>
+            <div class="row row-contact-section">
+                <div class="col contacts">
+                    <a href="https://www.linkedin.com/in/liliana-strajescu/"><img src="images/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/in/liliana-strajescu/" class="text-contact">Linkedin</a>
                 </div>
-                <div class="row contact-row">
-                    <div class="col ccontact-details">
-                        <a href="https://github.com/lilianastrajescu"><img src="images/github-contact.png"></a>
-                        <a href="https://github.com/lilianastrajescu">Github</a>
-                    </div>
+                <div class="col contacts content-left">
+                    <a href="https://github.com/lilianastrajescu"><img src="images/github-contact.png"></a>
+                    <a href="https://github.com/lilianastrajescu" class="text-contact">Github</a>
                 </div>
             </div>
-        </div>
     </section>
+
+    <footer class="main-footer container">
+        <div class="upper-footer">
+            <p>Passionate Front-end Developer</p>
+        </div>
+        <div class="lower-footer">
+            © Copyright 2023. Made by
+            <a target="_blank" href="#">Liliana Strajescu</a>
+        </div>
+    </footer>
+
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
