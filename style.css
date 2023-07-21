@@ -554,7 +554,11 @@ footer p {
     height: 100%;
   }
   .projects-images{
-    height: 150px;
+    height: 250px;
+  }
+  .row-contact-section{
+        display: flex;
+        flex-direction: column;
   }
   .row-contact-section{
         display: flex;
