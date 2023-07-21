@@ -35,7 +35,6 @@ a {
 li {
   list-style: none;
 }
-
 .logo {
   width: 70px;
   height: 70px;
@@ -49,9 +48,9 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: 60px 250px 50px 250px;
-position: relative;
+  position: relative;
 }
-.container-fluid{
+.container-fluid {
   max-width: 1300px;
   text-align: center;
 }
@@ -72,7 +71,6 @@ position: relative;
 .hamburger {
   display: none;
   cursor: pointer;
-  
 }
 .nav-item {
   font-size: 20px;
@@ -89,8 +87,6 @@ position: relative;
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
-
 /* First section */
 .main-section {
   display: flex;
@@ -429,13 +425,11 @@ footer p {
   }
   .hamburger {
     display: block;
-     position: fixed;
-  top: 20px;
-  right: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
-  .hamburger:active {
-    background-color: #ffffff;
-  }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -455,7 +449,7 @@ footer p {
     text-align: center;
     transition: 0.3s;
     background-color: black;
-    z-index: -5;
+    z-index: -10;
   }
   .nav-item {
     margin: 16px 0;
@@ -463,5 +457,4 @@ footer p {
   .nav-menu.active {
     left: 0;
   }
-
 }
