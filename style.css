@@ -479,8 +479,11 @@ footer p {
   .main-section {
     margin-top: 80px;
   }
+  .name-title {
+    font-size: 50px;
+  }
   .job-name {
-    font-size: 30px;
+    font-size: 40px;
   }
   .code-image img {
     width: 100px;
@@ -492,9 +495,7 @@ footer p {
     align-items: center;
     padding-top: 20px;
   }
-  .name-title {
-    font-size: 40px;
-  }
+
   .main-buttons-section {
     flex-direction: column;
     align-items: center;
@@ -553,11 +554,20 @@ footer p {
     height: 100%;
   }
   .projects-images{
-    height: 150px;
+    height: 250px;
+  }
+  .row-contact-section{
+        display: flex;
+        flex-direction: column;
   }
   .content-left{
     justify-content: flex-start;
-    
+  }
+  .contacts{
+    padding: 10px 0;
+  }
+  .text-contact{
+    padding: 5px;
   }
 }
 
