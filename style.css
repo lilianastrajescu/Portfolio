@@ -527,50 +527,59 @@ footer p {
   .skills-images {
     padding: 10px 0;
   }
-  .skills{
+  .skills {
     display: flex;
   }
-    .skills-name{
+  .skills-name {
     text-align: center;
   }
-  .prev, .next{
+  .prev,
+  .next {
     display: none;
   }
-  .text-projects{
+  .text-projects {
     text-align: center;
     margin-bottom: 40px;
   }
-  .projects-container{
+  .projects-container {
     margin-top: 30px;
   }
   .section-buttons-projects {
     margin-top: 50px;
     justify-content: center;
   }
-  .button-project{
+  .button-project {
     margin: 10px 15px;
   }
-  .projects-images img{
-    height: 100%;
+  .projects-images img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 1em;
   }
-  .projects-images{
-    height: 250px;
+  .projects-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .row-contact-section{
-        display: flex;
-        flex-direction: column;
+  .contact-container{
+    padding: 20px 0 30px 0;
+
   }
-  .row-contact-section{
-        display: flex;
-        flex-direction: column;
+  .row-contact-section {
+    display: flex;
+    flex-direction: column;
   }
-  .content-left{
+  .content-left {
     justify-content: flex-start;
   }
-  .contacts{
-    padding: 10px 0;
+  .contacts {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
   }
-  .text-contact{
+  .text-contact {
     padding: 5px;
   }
 }
