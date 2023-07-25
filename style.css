@@ -212,21 +212,21 @@ li {
 
 /*UP button*/
 #myBtn {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   bottom: 70px;
-  right: 70px; 
+  right: 70px;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 15px;
-  border-radius: 2em; 
+  border-radius: 2em;
 }
-#myBtn img{
-width: 30px;
-height: 30px;
+#myBtn img {
+  width: 30px;
+  height: 30px;
 }
 
 #myBtn:hover {
@@ -573,6 +573,7 @@ footer p {
   }
   .button-project {
     margin: 10px 15px;
+    height: 50px;
   }
   .projects-images img {
     max-width: 100%;
@@ -586,23 +587,40 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  .contact-container{
+  .contact-container {
     padding: 20px 0 30px 0;
-
   }
   .row-contact-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .content-left {
     justify-content: flex-start;
   }
   .contacts {
-    padding: 15px 0;
+    padding: 5px 0;
     display: flex;
     flex-direction: column;
   }
   .text-contact {
     padding: 5px;
+  }
+  .contacts a {
+    font-size: 16px;
+  }
+  .contacts img {
+    width: 50px;
+    height: 50px;
+  }
+  #myBtn {
+    width: 30px;
+    height: 30px;
+    bottom: 45px;
+    right: 20px;
+    padding: 0;
+  }
+  #myBtn img {
+    width: 15px;
+    height: 15px;
   }
 }
