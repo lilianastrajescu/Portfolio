@@ -208,8 +208,10 @@ li {
 .personal-text {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}.personal-text {
+  font-size: 18px;
 }
-
 /*UP button*/
 #myBtn {
   display: none;
@@ -279,6 +281,9 @@ li {
 .text-projects h3 {
   font-weight: 600;
   font-size: 40px;
+}
+.text-projects p {
+  font-size: 18px;
 }
 .section-buttons-projects {
   display: flex;
