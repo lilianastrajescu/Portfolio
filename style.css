@@ -20,18 +20,7 @@ body {
   margin-top: 50px;
    margin-bottom: 20px;
 }
-.sections-title:hover {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(
-    327deg,
-    rgb(126, 0, 149) 19%,
-    rgba(67, 167, 212, 1) 76%,
-    rgba(67, 167, 212, 1) 88%,
-    rgba(67, 167, 212, 1) 88%
-  );
-}
+
 
 /* Navbar */
 a {
@@ -186,20 +175,31 @@ li {
 /*About*/
 .about {
   margin: 130px;
-  border: solid 2px var(--blue-color-text);
+  border: solid 3px var(--blue-color-text);
   border-radius: 1.5em;
   padding-bottom: 50px;
+   background-image: linear-gradient(
+    327deg,
+    rgb(126, 0, 149) 19%,
+    rgba(67, 167, 212, 1) 76%,
+    rgba(67, 167, 212, 1) 88%,
+    rgba(67, 167, 212, 1) 88%
+  );
 }
 .content-about {
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 .personal-image img {
-  border: solid 2px var(--blue-color-text);
+  border: solid 3px white;
   border-radius: 10em;
   padding: 12px;
   width: 250px;
   height: 250px;
+}
+.personal-image{
+  align-items: center;
 }
 .personal-image,
 .personal-text {
@@ -222,12 +222,17 @@ li {
   cursor: pointer;
   padding: 15px;
   border-radius: 2em;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #myBtn img {
-  width: 30px;
-  height: 30px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
 }
-
 #myBtn:hover {
   background-color: var(--blue-color-text);
 }
@@ -273,15 +278,16 @@ li {
   text-align: center;
 }
 .projects-images img {
-  height: 290px;
+  height: auto;
   border-radius: 1em;
+  max-width: 100%;
 }
 .text-projects h3 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
 }
 .text-projects p {
-  font-size: 18px;
+  font-size: 15px;
 }
 .section-buttons-projects {
   display: flex;
@@ -323,6 +329,7 @@ li {
   color: #fff;
   z-index: 1;
   transition: all 0.3s ease-in-out;
+  font-size: 14px;
 }
 .button-project:hover span {
   color: #000000;
@@ -343,10 +350,6 @@ li {
 .dot:hover {
   background-color: var(--blue-color-text);
 }
-.dot {
-  width: 20px;
-  height: 20px;
-}
 .dots {
   text-align: center;
   margin: 30px;
@@ -354,7 +357,6 @@ li {
 .mySlides {
   display: none;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -385,18 +387,19 @@ li {
   color: black;
 }
 
+
 /*Contact section*/
 .contacts img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px;
   margin-right: 10px;
 }
 .contacts a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
 }
@@ -409,6 +412,14 @@ li {
 }
 .contacts img:hover {
   transform: scale(1.2);
+
+   background-image: linear-gradient(
+    327deg,
+    rgb(216, 70, 242) 19%,
+    rgb(143, 206, 234) 76%,
+    rgb(187, 231, 251) 88%,
+    rgb(138, 218, 255) 88%
+  );
 }
 .contacts {
   padding-top: 40px;
@@ -521,9 +532,8 @@ footer p {
     align-items: center;
     padding-top: 20px;
   }
-
   .main-buttons-section {
-    flex-direction: column;
+  justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
   }
