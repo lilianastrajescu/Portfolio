@@ -280,7 +280,7 @@ li {
 .projects-images img {
   height: auto;
   border-radius: 1em;
-  max-width: 100%;
+  max-width: 85%;
 }
 .text-projects h3 {
   font-weight: 600;
@@ -296,7 +296,6 @@ li {
 .section-buttons-projects a {
   text-decoration: none;
 }
-
 .button-project img {
   width: 20px;
   height: 20px;
@@ -407,19 +406,12 @@ li {
   color: white;
 }
 .contacts a:hover {
-  color: var(--violet-text-color);
-  text-decoration: underline;
+  color: white;
+   transform: scale(1.1);
 }
 .contacts img:hover {
   transform: scale(1.2);
-
-   background-image: linear-gradient(
-    327deg,
-    rgb(216, 70, 242) 19%,
-    rgb(143, 206, 234) 76%,
-    rgb(187, 231, 251) 88%,
-    rgb(138, 218, 255) 88%
-  );
+  
 }
 .contacts {
   padding-top: 40px;
