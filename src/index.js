@@ -62,7 +62,6 @@ carousel.addEventListener("touchend", (e) => {
   }
 });
 
-
 // UP Button
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function () {
