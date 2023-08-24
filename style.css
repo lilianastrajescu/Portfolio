@@ -209,6 +209,20 @@ li {
 }.personal-text {
   font-size: 16px;
 }
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /*UP button*/
 #myBtn {
   display: none;
@@ -258,6 +272,27 @@ li {
 }
 .skills-name {
   margin-top: 20px;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*Projects*/
@@ -401,23 +436,36 @@ li {
   font-size: 18px;
   color: #ffffff;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 .contacts a:visited {
   color: white;
 }
 .contacts a:hover {
   color: white;
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
 .contacts img:hover {
   transform: scale(1.2);
-  
 }
 .contacts {
   padding-top: 40px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .contact-container {
   max-width: 800px;

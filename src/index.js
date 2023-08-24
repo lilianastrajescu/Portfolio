@@ -43,6 +43,24 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+const carousel = document.querySelector(".slideshow-container");
+let touchStartX = 0;
+
+carousel.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+
+carousel.addEventListener("touchend", (e) => {
+  const touchEndX = e.changedTouches[0].clientX;
+  const touchDiff = touchStartX - touchEndX;
+
+  if (touchDiff > 50) {
+    plusSlides(1); 
+  } else if (touchDiff < -50) {
+    plusSlides(-1); 
+  }
+});
+
 
 // UP Button
 let mybutton = document.getElementById("myBtn");
@@ -58,8 +76,26 @@ function scrollFunction() {
   }
 }
 
-
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function reveal() {
+ let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+   let windowHeight = window.innerHeight;
+   let elementTop = reveals[i].getBoundingClientRect().top;
+   let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
